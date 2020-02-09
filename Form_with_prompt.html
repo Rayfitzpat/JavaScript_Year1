@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>More Form Examples</title>
+        <link rel="stylesheet" type="text/css" href="css/myStyle.css">
+        
+    </head>
+    <body onload="myScript:UpdateData()">
+<header>
+    <h1 id="theTitle"> All about you</h1>
+</header>
+
+    <main>
+        <table border="1">
+            <tr>
+                <td>Name</td>
+                <td id="theName">Your name will appear here</td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td id="theAge">Your age will appear here</td>
+            </tr>
+            <tr>
+                <td>Height in cm</td>
+                <td id="theHeight">Your height will appear here</td>
+            </tr>
+        </table>
+
+
+    </main>
+<footer>
+    Copyright &copy; <script>document.write( new Date().getFullYear() );</script>
+</footer>
+
+<script >
+    function UpdateData(){
+    var name = prompt("Enter your name");
+    var age = prompt("Enter your age");
+    var height = prompt("Enter your height in feet. e.g. 5.11");
+
+    height = height* 30.48;
+    document.getElementById("theTitle").innerHTML="Some info about " +name;
+    document.getElementById("theName").innerHTML= name;
+    document.getElementById("theAge").innerHTML= age;
+    document.getElementById("theHeight").innerHTML= height.toFixed(2);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Sum Average</title>
+		<style>
+			body{ background-color: rgb(27, 27, 27); font: 1.254em 'Comic Sans MS'}
+			h1{color: blue; text-align: center}
+            #blueText{color: blue;}
+            h4{color: white;}
+            #greenText{color: green;}
+            #yellowText{color: yellow;}
+           
+		</style>
+		<script type="text/javascript">
+		var num1 = parseInt(prompt("Please enter your 1st number?"));
+		var result =" ";
+		var sumNumb=" ";
+		var aveNumb=" ";
+
+		if(isNaN(num1) || num1<1)
+		{
+			alert("You did not enter a valid number");
+			result+="<h1>Please refresh the page and try again</h1>"
+		}
+		else
+		{
+			var num2 = parseInt(prompt("Please enter your 2nd number?"));
+		
+			if(isNaN(num2) || num2<1)
+			{
+			alert("You did not enter a valid numbers");
+			result+="<h1>Please refresh the page and try again</h1>"
+			}
+			else
+			{
+			var num3 = parseInt(prompt("Please enter your 3rd number?"));
+
+				if(isNaN(num3) || num3<1)
+				{
+				alert("You did not enter a valid numbers");
+				result+="<h1>Please refresh the page and try again</h1>"
+				}
+				else
+				{
+				var num4 = parseInt(prompt("Please enter your 4th number?"));
+
+					if(isNaN(num4) || num4<1)
+					{
+					alert("You did not enter a valid numbers");
+					result+="<h1>Please refresh the page and try again</h1>"
+                    
+					}
+					else
+					{
+
+					var num5 = parseInt(prompt("Please enter your 5th number?"));
+
+						if(isNaN(num5) || num5<1)
+						{
+						alert("You did not enter a valid numbers");
+						result+="<h1>Please refresh the page and try again</h1>"
+						}
+						else
+						{
+							aveNumb = (num1+num2+num3+num4+num5) / 5;
+							sumNumb = (num1+num2+num3+num4+num5);
+
+						}
+					}
+				}
+			}						
+		}
+        document.write(result);
+		document.write("<h4>The numbers you entered were: </h4>" + "<span id = yellowText>" + num1 + " " + num2 + " " + num3 + " " + num4 + " " + num5 + "</span>");
+		document.write("<br><h4> The sum of these numbers is: </h4>" +"<span id= blueText>" +sumNumb+"</span>");
+		document.write("<br><h4>The average of these numbers is: </h4>" + "<span id = greenText>"+ aveNumb + "</span)");
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

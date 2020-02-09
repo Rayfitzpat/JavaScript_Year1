@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>More Form Examples</title>
+	</head>
+	<body>
+		<h3 style="text-align: center;"> Please provide feedback on your visit </h3>
+		<form method="post" action="mailto:rayFitz@gmail.com?subject=Website_info" enctype="text/plain">
+			
+			<fieldset>
+				<legend>Personal Details</legend>
+				<table>
+					<tr>
+						<td> First Name</td> 
+						<td><input type="text" name="firstname" /> <br/></td>
+						</tr>
+					<tr>
+						<td>Surname </td>
+						<td><input type="text" name="lastname" /> <br/></td>
+					</tr>	
+					<tr>
+						<td>Phone </td>
+						<td><input type="text" name="phone" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-9999" /> <br/></td>
+					</tr>	
+					<tr>
+						<td>E-mail </td>
+						<td><input type="text" name="email" id="email" required /> <br/></td>
+					</tr>	
+					<tr>
+						<td>Date Visited </td>
+						<td><input type="date" name="visited" /> <br/></td>
+					</tr>	
+					<tr>
+						<td>Rate my site from 1 - 5 </td>
+						<td><input type="range" name="rateMe" id="rateMe" min="1" max="5" step="1" /> <br/></td>
+					</tr>	
+					<tr>
+						<td>Cost </td>
+						<td><input type="number" name="cost" id="cost" min="100" max="1000" step="100" value="300" /> <br/></td>
+					</tr>	
+					<tr>
+						<td>Yor URL </td>
+						<td><input type="text" name="lastname" /> <br/></td>
+					</tr>	
+					<tr>
+						<td>Comments </td>
+						<td> 
+							<textarea rows="6" cols="60"></textarea>
+						</td>
+					</tr>	
+					<tr>
+						
+						<td><input type="submit" name="submit" value="Submit" /> <br/></td>
+						<td><input type="reset" name="reset"  /> <br/></td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>	
+
+		<p style="text-align: center;"> 
+			<img src="http://www.w3.org/html/logo/downloads/HTML5_Logo_64.png" 
+			alt="Valid HTML5 code" />
+		</p>
+	</body>
+</html>

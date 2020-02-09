@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>stars</title>
+		<style>
+			body{ background-color: rgb(255,255,204); font: 1.254em 'Comic Sans MS'}
+			h1{color: blue; text-align: center}
+		</style>
+		<script type="text/javascript">
+		var stars = parseInt(prompt("How many stars do you want?"));
+		var result =" ";
+		if(isNaN(stars) || stars<1)
+		{
+			alert("You did not enter a valid number of stars");
+			result+="<h1>Please refresh the page and try again</h1>"
+		}
+		else
+		{
+			result+="<h3>Here are your " +stars +" stars</h3><hr>";
+			if(stars>=100){
+				result+="<div style='text-align: center; color: blue;'>";
+				console.log("There are more than 100 stars;")
+			}
+			for(var i=1; i<=stars; i++)
+			{
+				if(i%100==0)
+					result+= "<br>";
+				else
+					result+="*";
+			}
+			result+="</div><hr>";
+			
+		}
+		document.write(result);
+		</script>
+
+	</head>
+	<body>
+	</body>
+</html>

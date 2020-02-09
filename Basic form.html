@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//Dtd XHTML 1.1//EN" 
+"http://www.w3.org/tr/xhtml11/Dtd/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Testing Forms</title>
+	</head>
+	<body>
+		<p style="text-align:center">
+			<img src="images/ait-logo.png"/>
+		</p>
+
+		<h1 style="text-align:center">Register now for the Web Development Club</h1>
+
+		<form method="post" action="mailto:rayFitz@gmail.com?subject=Website info" enctype="text/plain">
+			<!-- Fieldset 1 -->
+			<fieldset>
+				<legend>Personal Details</legend>
+				<table>
+				<tr>
+				<td> Name</td> 
+				<td><input type="text" name="firstname" /> <br/></td>
+				</tr>
+				<tr>
+					<td>Surname </td>
+					<td><input type="text" name="lastname" /> <br/></td>
+				</tr>	
+				<tr>
+						<td>Address 1 </td>
+						<td><input type="text" name="address1" /> <br/></td>
+				</tr>
+				<tr>
+						<td>Address 2 </td>
+						<td><input type="text" name="address2" /> <br/></td>
+				</tr>
+				<tr>
+						<td>Town </td>
+						<td><input type="text" name="town" /> <br/></td>
+				</tr>
+				<tr>
+						<td>County </td>
+						<td><input type="text" name="county" /> <br/></td>
+				</tr>
+				<tr>
+						<td>Male </td>
+						<td><input type="radio" name = "gender" /> <br/></td>
+				</tr>
+				<tr>
+						<td>Female</td>
+						 <td><input type="radio" name = "gender" /> <br/></td>
+				</tr>
+				<tr>
+						<td>Date of Birth</td>
+							<td><input type="text" name="dob" /> <br/></td>
+				</tr>
+			</table>
+			</fieldset>
+
+			<!-- Fieldset 2 -->
+			<fieldset>
+					<legend>Login Details</legend>
+					<table>
+					<tr>
+					<td> Password</td> 
+					<td><input type="text" name="password" /> <br/></td>
+					</tr>
+					<tr>
+						<td>User Name </td>
+						<td><input type="text" name="username" /> <br/></td>
+					</tr>	
+					</table>
+			</fieldset>
+
+			<!-- Fieldset 3 -->
+			<fieldset>
+					<legend>Course Details</legend>
+					<table>
+					<tr>
+					<td> Enrolled in Game Dev</td> 
+					<td><input type="radio" name="enrolled" /> <br/></td>
+					</tr>
+					<tr>
+						<td>Enrolled in Cloud Dev  </td>
+						<td><input type="radio" name="enrolled" /> <br/></td>
+					</tr>	
+					<tr>
+						<td>Year </td>
+						<td><input type="text" name="year" /> <br/></td>
+						</tr>	
+					</table>
+			</fieldset>
+			<!-- Fieldset 4 -->
+			<fieldset>
+					<legend>Mailing Lists</legend>
+					<table>
+					<tr>
+					<td> I want to be added to the mailing list</td> 
+					<td><input type="checkbox" name="maillist" /> <br/></td>
+					</tr>
+					<tr>
+						<td>I want to be notified about any special offers </td>
+						<td><input type="checkbox" name="offers" /> <br/></td>
+					</tr>	
+					</table>
+			</fieldset>
+			<!-- Fieldset 5 -->
+			<fieldset>
+					<legend>Comments</legend>
+					<table>
+					<tr>
+					<td> Comments</td> 
+					<td><input type="text" name="comment" value="Enter any comment" size="50" /> <br/></td>
+					</tr>
+			
+					</table>
+			</fieldset>
+			<!-- Fieldset 6 -->
+			<fieldset>
+					<legend>Submit information</legend>
+					<table>
+					<tr>
+					<td> Comments</td> 
+					<td><input type="submit" name="submit" value="Submit" /> <br/></td>
+					<td><input type="reset" name="reset"  /> <br/></td>
+					</tr>
+			
+					</table>
+			</fieldset>
+
+		</form>
+
+		<p style="text-align: center;"> 
+			<img src="http://www.w3.org/Icons/valid-xhtml11" 
+			alt="Valid XHTML 1.0 Strict" height="31" width="88"/>
+		</p>
+	</body>
+</html>

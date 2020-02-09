@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Sum Average</title>
+		<style>
+			body{ background-color: rgb(138, 137, 137); font: 1.254em 'Comic Sans MS'}
+			h1{color: blue; text-align: center}
+            #blueText{color: blue;}
+            h4{color: white;}
+            #greenText{color: green;}
+            #yellowText{color: yellow;}
+           
+		</style>
+		<script type="text/javascript">
+		var result = "<h1>SUMS</h1><p> The values you entered were: "
+        var sum = 0.0;
+        for(var i=1; i<=5; i++)
+        {
+            var temp = parseFloat(prompt("Please enter a value"));
+            while(isNaN(temp))
+        {
+            alert("This is not a correct numerical value");
+            temp = parseFloat(prompt("Please enter a numerical value"));
+            }
+            console.log("valid input: " +temp);
+            result+=temp+" ";
+            sum+=temp;
+            }
+
+            result += "<br>Sum = " +(sum).toFixed(3)+"<br>Average="+(sum/5.0).toFixed(3)+"</p>";
+            document.write(result);
+            console.log("Sum = "+(sum).toFixed(3)+"\+Average = " +(sum/5.0).toFixed(3));
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
